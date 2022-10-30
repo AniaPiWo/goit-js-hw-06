@@ -23,7 +23,7 @@ Jeśli użytkownik uzupełnił wszystkie pola i wysłał formularz, zbierz warto
 Umieść obiekt z wprowadzonymi danymi do wiersza poleceń i wyczyść wartości pól formularza metodą reset.`
 */
 
-    const form = document.querySelector(".form");
+    const form = document.querySelector(".login-form");
 
     form.addEventListener("submit", handleSubmit);
 
@@ -35,8 +35,14 @@ Umieść obiekt z wprowadzonymi danymi do wiersza poleceń i wyczyść wartości
 
         if (email.value === "" || password.value === "") {
             return alert("Please fill in all the fields!");
-        }
+      }
+      
+      let user = {
+        email: email.value,
+        password: password.value,
+      }
 
-        console.log(`Login: ${email.value}, Password: ${password.value}`);
-        event.currentTarget.reset();
+    console.log(user)
+
+    event.currentTarget.reset();
     }

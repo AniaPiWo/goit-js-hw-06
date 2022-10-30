@@ -56,12 +56,12 @@ W HTML znajduje się pusta lista ul#ingredients.
 W JavaScript znajduje się tablica ciągów.
 
 const ingredients = [
-  "Potatoes",
-  "Mushrooms",
-  "Garlic",
-  "Tomatos",
-  "Herbs",
-  "Condiments",
+"Potatoes",
+"Mushrooms",
+"Garlic",
+"Tomatos",
+"Herbs",
+"Condiments",
 ];
 
 Napisz skrypt, który dla każdego elementu tablicy ingredients:
@@ -80,18 +80,18 @@ Użyj tablicy obiektów images w celu utworzenia elementów <img> umieszczonych 
 Wszystkie elementy galerii powinny być dodawane do DOM podczas jednej operacji.
 Ulepsz galerię używając flexboxów lub gridów poprzez klasy CSS.
 const images = [
-  {
-    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-    alt: "White and Black Long Fur Cat",
-  },
-  {
-    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-  },
-  {
-    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-    alt: "Group of Horses Running",
-  },
+{
+url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+alt: "White and Black Long Fur Cat",
+},
+{
+url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+},
+{
+url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+alt: "Group of Horses Running",
+},
 ];
 
 Zadanie 4
@@ -106,6 +106,7 @@ Licznik składa się ze spana i przycisków, które, po ich kliknięciu, powinny
 Utwórz zmienną counterValue w której będzie przechowywana aktualna wartość licznika i inicjalizuj wartość 0.
 Dodaj click listeners do przycisków, wewnątrz których zwiększaj i zmniejszaj wartość licznika.
 Aktualizuj interfejs nową wartością zmiennej counterValue.
+
 Zadanie 5
 Napisz skrypt, który przy wpisywaniu tekstu w polu input input#name-input (zdarzenie input) wstawia jego aktualną wartość do span#name-output. Jeśli pole input jest puste, w spanie powinien wyświetlić się komunikat "Anonymous".
 
@@ -127,15 +128,15 @@ Jeśli wprowadzono odpowiednią liczbę symboli, to border pola input staje się
 Aby dodać style, używaj klas CSS valid i invalid, które już dodaliśmy do plików źródłowych zadania.
 
 #validation-input {
-  border: 3px solid #bdbdbd;
+border: 3px solid #bdbdbd;
 }
 
 #validation-input.valid {
-  border-color: #4caf50;
+border-color: #4caf50;
 }
 
 #validation-input.invalid {
-  border-color: #f44336;
+border-color: #f44336;
 }
 
 Zadanie 7
@@ -165,6 +166,7 @@ Podczas przesyłania formularza strona nie powinna się restartować.
 Jeśli w formularzu są nieuzupełnione pola, wprowadź alert z upomnieniem o tym, że wszystkie pola powinny zostać wypełnione.
 Jeśli użytkownik uzupełnił wszystkie pola i wysłał formularz, zbierz wartość pól jako obiekt, gdzie nazwa pola będzie nazwą właściwości, a wartość pola - wartością właściwości. Aby otrzymać dostęp do elementów formularza użyj właściwości elements.
 Umieść obiekt z wprowadzonymi danymi do wiersza poleceń i wyczyść wartości pól formularza metodą reset.
+
 Zadanie 9
 Napisz skrypt, który zmienia kolor tła elementu <body> poprzez style inline po kliknięciu na button.change-color i wprowadza wartość koloru do span.color.
 
@@ -176,9 +178,7 @@ Napisz skrypt, który zmienia kolor tła elementu <body> poprzez style inline po
 Aby wygenerować losowy kolor użyj funkcji getRandomHexColor.
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
+return `#${Math.floor(Math.random() * 16777215) .toString(16) .padStart(6, 0)}`;
 }
 
 Zadanie 10 (nieobowiązkowe)
@@ -198,7 +198,5 @@ Wymiary pierwszego <div> - 30px na 30px.
 Każdy następny element powinien być szerszy i wyższy od poprzedniego o 10px.
 Wszystkie elementy powinny mieć losowy kolor tła w formacie NEX. Użyj gotowej funkcji getRandomHexColor aby otrzymać kolor.
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
+return `#${Math.floor(Math.random() * 16777215) .toString(16) .padStart(6, 0)}`;
 }
