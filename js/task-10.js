@@ -42,20 +42,20 @@ document.querySelector('#controls button[data-destroy]').addEventListener('click
   
 });
 
-function createBoxes( numberOfBoxes ) {
+const createBoxes = (numberOfBoxes) => {
   
-  if ( numberOfBoxes >= 1 && numberOfBoxes <= 100 ) {
+  if (numberOfBoxes >= 1 && numberOfBoxes <= 100) {
     
-    for ( let i = 1; i <= numberOfBoxes; i++ ) {
+    for (let i = 1; i <= numberOfBoxes; i++) {
       
-      boxes.insertAdjacentHTML("beforeend", `<div style="width: ${Math.floor( ( i * 10 ) + 20 )}px; height: ${Math.floor( ( i * 10 ) + 20 )}px; background-color: ${getRandomHexColor()}; margin: 10px; border: 1px solid black;"></div>`);
+      boxes.insertAdjacentHTML("beforeend", `<div style="width: ${Math.floor((i * 10) + 20)}px; height: ${Math.floor((i * 10) + 20)}px; background-color: ${getRandomHexColor()}; margin: 10px; border: 1px solid black;"></div>`);
     
     }
   
   } else {
     
-    boxes.insertAdjacentHTML("beforeend", `<p>Liczba musi byc wieksza niz 1 i mniejsza niz 100</p>`);
+    boxes.insertAdjacentHTML("beforeend", `<p>The number must be greater than 1 and less than 100.</p>`);
     
   }
   
-}
+};
