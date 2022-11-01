@@ -9,6 +9,6 @@ let fontSize = document.getElementById("font-size-control");
 
 let text = document.getElementById("text");
 
-fontSize.oninput = function() {
+fontSize.oninput = function () {
   text.style.fontSize = fontSize.value + "px";
 };

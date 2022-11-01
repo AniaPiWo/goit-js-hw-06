@@ -29,7 +29,6 @@ const galleryImgs = document.querySelector('.gallery');
 
 for (var image of images) {
   galleryImgs.insertAdjacentHTML("beforeend", '<li><img src="' + image.url + '" alt="' + image.alt + '" height="400"/></li>');
-  galleryImgs.setAttribute("style", "list-style-type:none; display: flex; gap:15px;");
 }
 
 
